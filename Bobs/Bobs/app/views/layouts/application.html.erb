@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bobs</title>
+  <script src="https://use.fontawesome.com/823c7bdc67.js"></script>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id = "logo">			
+    <h1><%= image_tag 'logo.png' %>Burgers &#8226; Pasta &#8226; Pizza</h1>
+	</div>
+	<div id = menu>
+  <div id="nav">
+    <ul>
+      <li><a href='.'><i class='fa fa-home'></i><span>Home</span></a></li>
+      <li><a href='menu'><i class='fa fa-cutlery'></i><span>Menu</span></a></li>
+      <li><a href='#'><i class='fa fa-user'></i><span>About</span></a></li>
+      <li><a href='contact'><i class='fa fa-book'></i><span>Contact</span></a></li>
+      <li><a href='locate'><i class='fa fa-map'></i><span>Locate</span></a></li>
+    </ul>
+  </div>
+</div>
+<%= yield %>
+
+</body>
+</html>
