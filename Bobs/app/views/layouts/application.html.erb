@@ -18,8 +18,15 @@
       <li><a href='menu'><i class='fa fa-cutlery'></i><span>Menu</span></a></li>
       <li><a href='contact'><i class='fa fa-book'></i><span>Contact</span></a></li>
       <li><a href='locate'><i class='fa fa-map'></i><span>Locate</span></a></li>
-      <li><a href='#'><i class='fa fa-user'></i><span>Log In/Sign Up</span></a></li>
-
+      <% if !user_signed_in? %>
+      <li> <%= link_to new_user_session_path do %>
+        <i class='fa fa-user'></i><span>Sign In/ Sign Up</span> 
+      <% end %></li>      
+      <% else %>
+      <li> <%= link_to destroy_user_session_path, :method => :delete do %>
+        <i class='fa fa-user'></i><span>Sign Out</span> 
+      <% end %></li> 
+      <% end %>
     </ul>
   </div>
 </div>
