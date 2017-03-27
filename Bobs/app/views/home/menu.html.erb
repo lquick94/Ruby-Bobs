@@ -7,8 +7,6 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
 </head>
 
-
-
 <body>
   <div id="menuView">
     <div class="container">
@@ -24,72 +22,26 @@
       <div class="table-flexible">
         <table class="table borderless">
           <tbody>
-            <tr>
+              <% Menu.distinct(:category).pluck(:category).each do |category| %>
+              <tr>
               <td colspan="3" class="text-center">
-                <% Menu.distinct(:category).pluck(:category).each do |category| %>
                 <span class="secTitle"><%= category %></span>
-                <% end %>
               </td>
             </tr>
+            <% @item.each do |product| %>
+            <% if category == product.category %>
             <tr>
               <td>
-                <span class="dishName">Assiette de fruitset fondue de brie</span><br/>
-                <span class="dishDesc">Wedge of baked Brie with ripe melon and berries</span></td>
-              <td class="price">$7</td>
-              <td class="add"><a href="#">Add</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="dishName">Chausson du fromage de ch&egrave;vre</span><br/>
-                <span class="dishDesc">Goat cheese tart</span>
-              </td>
-              <td class="price">6</td>
-              <td class="add"><a href="#">Add</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="dishName">Palourdes au gratin</span><br/>
-                <span class="discDesc">Baked clams with garlic butter and bread crumbs</span>
-              </td>
-              <td class="price">9</td>
-              <td class="add"><a href="#">Add</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="3" class="text-center">
-                <span class="secTitle">Entr&eacute;es</span>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="dishName">Poulet &aacute; la moutard et au miel</span>
-                </br>
-                <span class="dishDesc">Grilled chicken breast with honey mustard glaze</span>
-                <td class="price">17</td>
-                <td class="add"><a href="#">Add</a>
-                </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="dishName">Champignon parmentier au gratin</span><br/>
-                <span class="dishDesc">Braised portobello mushrooms, topped with mashed potatoes and Gruy&egrave;re</span>
-              </td>
-              <td class="price">15</td>
-              <td class="add"><a href="#">Add</a>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="dishName">Porc &aacute; la dijonnaise</span><br/>
-                <span class="dishDesc">Saut&eacuteed pork medallions with an orange compare sauce</span>
-              </td>
-              <td class="price">18</td>
-              <td class="add"><a href="#">Add</a>
-              </td>
-            </tr>
+                
+                <span class="dishName"><%= product.name %></span><br/>
+                <span class="dishDesc"><%= product.description %></span></td>
+                <td class="price"><%= product.price %></td>
+                <td class="add"><a href="#">Add</a></td>
+           
+             </tr>             
+             <% end %>
+              <% end %>
+             <% end %>
           </tbody>
         </table>
       </div>

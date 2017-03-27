@@ -89,11 +89,6 @@ body {
 	clear: right;
 }
 
-.hours {
-	margin-top: 30px;
-	clear: right;
-}
-
 .onlineOrder {
 	font-family: Oswald;
 	font-size: 20px;
@@ -106,22 +101,37 @@ body {
 	background-color: white;
 	border-style: outset;
 	border-radius: 10px;
+	margin-top: 20px;
+}
+.aboutInfo{
+  font-family: Oswald;
+	font-size: 20px;
+	float: right;
+	display: inline;
+	width: 51%;
+	min-height: 50px;
+  clear: right;
+  text-align: center;
+	background-color: white;
+	border-style: outset;
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-right: 9%;
 }
 
 .hours {
-	position: static;
 	font-family: Oswald;
 	font-size: 20px;
 	float: left;
 	display: inline;
-	width: 30%;
+	width: 25%;
 	min-height: 50px;
-	margin-left: 2%;
+	margin-left: 9%;
 	text-align: center;
 	background-color: white;
 	border-style: outset;
 	border-radius: 10px;
-	clear: left;
+	margin-top: 20px;
 }
 
 .login ul {
@@ -396,6 +406,7 @@ position: absolute;
 
 .slideshow-container{
   width: 60%;
+  height: 500px;
   clear: right;
   overflow: hidden;
   padding-right: 9%;
@@ -404,7 +415,7 @@ position: absolute;
 }
 .slideshow-container img{
   width: 100%;
-  width: 100%;
+  height: 500px;
   position: relative;
   border-style: outset;
 	border-radius: 10px;
@@ -500,7 +511,6 @@ font-family: Oswald;
 	width: 25%;
 	min-height: 50px;
 	margin-left: 9%;
-	margin-bottom: 20px;
 	text-align: center;
 	background-color: white;
 	border-style: outset;
