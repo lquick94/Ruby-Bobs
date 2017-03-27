@@ -10,5 +10,15 @@ class HomeController < ApplicationController
   
   def locate
   end
+  
+  def account
+  end
 
+  def menu_params
+    params.require(:menu).permit(:name, :description, :price, :category)
+  end
+  
+  def menu 
+   @item = Menu.all
+  end
 end

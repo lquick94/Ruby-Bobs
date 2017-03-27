@@ -4,6 +4,9 @@
 # Examples:
 #
 #   cities = users.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-    User.create!(:email => 'lesliequick94@gmail.com', :password => 'leslierules', :username => 'leslie')
+    Menu.create!(:name => 'Classic Cheese Burger', :description => "Delicious cheese burger", :price => 8.99, :category => 'Burgers')
+    Menu.create!(:name => 'Bacon Cheese Burger', :description => "Delicious bacon cheese burger", :price => 10.99, :category => 'Burgers')
+    Menu.create!(:name => 'Pepperoni Pizza', :description => "Delicious pizza", :price => 8.99, :category => 'Pizza')
+    Menu.create!(:name => 'Chicken Alfredo', :description => "Delicious pasta", :price => 7.99, :category => 'Pasta')
 
 #   Mayor.create(name: 'Emanuel', city: cities.first)

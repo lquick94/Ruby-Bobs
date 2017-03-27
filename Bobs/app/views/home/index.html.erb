@@ -1,4 +1,4 @@
-<%= render(:partial => "orderOnline") %>
+
 
 
 <div class="slideshow-container">
@@ -14,12 +14,11 @@
 <div class="mySlides">
  <img <%= image_tag 'burger.jpg' %> >
 </div>
-
-
-
 </div>
 
+<%= render(:partial => "cart") %>
 
+<%= render(:partial => "orderOnline") %>
 
 <script>   
 var slideIndex = 0;

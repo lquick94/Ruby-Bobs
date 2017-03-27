@@ -95,19 +95,17 @@ body {
 }
 
 .onlineOrder {
-  clear: left;
 	font-family: Oswald;
 	font-size: 20px;
 	float: left;
 	display: inline;
-	width: 30%;
+	width: 25%;
 	min-height: 50px;
-	margin-left: 2%;
+	margin-left: 9%;
 	text-align: center;
 	background-color: white;
 	border-style: outset;
 	border-radius: 10px;
-	opacity: 0.85;
 }
 
 .hours {
@@ -123,7 +121,6 @@ body {
 	background-color: white;
 	border-style: outset;
 	border-radius: 10px;
-	opacity: 0.85;
 	clear: left;
 }
 
@@ -163,7 +160,6 @@ body {
   border-radius: 15px;
   box-shadow: -3px 3px 3px 3px #999;
 	margin: 5 0 5 100px;
-	opacity: 0.85;
 }
 
 .button:hover {
@@ -189,7 +185,6 @@ body {
 	border-radius: 10px;
 	float: left;
 	margin-left: 120px;
-	opacity: 0.85;
 }
 
 .register h2 {
@@ -400,10 +395,10 @@ position: absolute;
 */
 
 .slideshow-container{
-  width: 65%;
+  width: 60%;
   clear: right;
   overflow: hidden;
-  padding-right: 2%;
+  padding-right: 9%;
   float: right;
   	
 }
@@ -479,4 +474,40 @@ position: absolute;
     margin: 250px auto 0px;
     background-color: white;
     height: 1200px;
+}
+
+
+
+.account {
+	width: 60%;
+	font-family: Oswald;
+	font-size: 20px;
+  min-height: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+  background-color: white;
+	border-style: outset;
+	border-radius: 10px;
+	margin-left: 20%;
+	float: left;
+}
+
+.cart {
+font-family: Oswald;
+	font-size: 20px;
+	float: left;
+	display: inline;
+	width: 25%;
+	min-height: 50px;
+	margin-left: 9%;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: white;
+	border-style: outset;
+	border-radius: 10px;
+	clear: left;
+  
+}
+.account h1 {
+	text-align: center;
 }
