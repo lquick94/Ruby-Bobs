@@ -14,10 +14,10 @@
 	<div id = menu>
   <div id="nav">
     <ul class = menu>
-      <li><a href='.'><i class='fa fa-home'></i><span>Home</span></a></li>
-      <li><a href='menu'><i class='fa fa-cutlery'></i><span>Menu</span></a></li>
-      <li><a href='contact'><i class='fa fa-book'></i><span>Contact</span></a></li>
-      <li><a href='locate'><i class='fa fa-map'></i><span>Locate</span></a></li>
+      <li><%= link_to root_path do %><i class='fa fa-home'></i><span>Home</span></li><% end %>
+      <li><%= link_to menu_path do %><i class='fa fa-cutlery'></i><span>Menu</span></li><% end %>
+      <li><%= link_to contact_path do %><i class='fa fa-book'></i><span>Contact</span></li><% end %>
+      <li><%= link_to locate_path do %><i class='fa fa-map'></i><span>Locate</span></li><% end %>
       <% if !user_signed_in? %>
       <li> <%= link_to new_user_session_path do %>
         <i class='fa fa-user'></i><span>Sign In/Sign Up</span> 
@@ -25,6 +25,7 @@
       <% else %>
       <li><a href='account'><i class='fa fa-user'></i><span>Account</span> </a>
       <% end %></li> 
+      
     </ul>
 
   </div>
