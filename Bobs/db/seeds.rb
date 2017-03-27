@@ -10,3 +10,4 @@
     Menu.create!(:name => 'Chicken Alfredo', :description => "Delicious pasta", :price => 7.99, :category => 'Pasta')
 
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+AdminUser.create!(email: 'eldutche@gmail.com', password: 'testing', password_confirmation: 'testing')
