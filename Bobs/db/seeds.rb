@@ -8,5 +8,9 @@
     Menu.create!(:name => 'Bacon Cheese Burger', :description => "Delicious bacon cheese burger", :price => 10.99, :category => 'Burgers')
     Menu.create!(:name => 'Pepperoni Pizza', :description => "Delicious pizza", :price => 8.99, :category => 'Pizza')
     Menu.create!(:name => 'Chicken Alfredo', :description => "Delicious pasta", :price => 7.99, :category => 'Pasta')
+    Menu.create!(:name => 'Spaghetti', :description => "Delicious pasta", :price => 5.99, :category => 'Pasta')
+    Menu.create!(:name => 'Shrimp Scampi', :description => "Delicious pasta", :price => 12.99, :category => 'Pasta')
+    Menu.create!(:name => 'Cheese Pizza', :description => "Delicious pasta", :price => 6.99, :category => 'Pizza')
+
 
 #   Mayor.create(name: 'Emanuel', city: cities.first)
