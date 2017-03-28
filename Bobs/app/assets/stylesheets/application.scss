@@ -545,11 +545,23 @@ position: absolute;
 
 #menuView {
     margin: 250px auto 0px;
-    background-color: white;
-    height: 1200px;
+    background-color: #FFFADD;
+    height: 1500px;
+    font-family: 'Space Mono', monospace;
 }
 
+.secTitle {
+  font-size: 24px;
+}
 
+.dishName{
+  font-size: 18px;
+}
+
+.dollar:before {
+    content: '$';
+    font-size: somethingSmaller;
+}
 
 .account {
 	width: 60%;
