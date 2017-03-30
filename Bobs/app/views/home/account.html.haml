@@ -1,0 +1,6 @@
+- if user_signed_in?
+  .account
+    %h1 User Account
+    %li= link_to('Logout', destroy_user_session_path, :method => :delete)
+- else
+  redirect_to '.'

@@ -1,0 +1,11 @@
+.contact
+  %h2 Contact Us
+  .form
+    %form{:action => "", :method => "post"}
+      %input{:name => "first_name", :placeholder => "First Name", :type => "text"}/
+      %input{:name => "email", :placeholder => "E-mail Address", :type => "text"}/
+      %input{:name => "subject", :placeholder => "Subject", :type => "text"}/
+      %br/
+      %br/
+      %textarea{:name => "message", :placeholder => "Please share any comments, questions, or feedback with us!"}
+      %input{:type => "submit", :value => "Send"}/

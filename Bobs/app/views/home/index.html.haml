@@ -1,0 +1,21 @@
+.slideshow-container
+  .mySlides
+    %img/
+    = image_tag 'pasta.jpeg'
+    \&gt;
+  .mySlides
+    %img/
+    = image_tag 'pizza.jpg'
+    \&gt;
+  .mySlides
+    %img/
+    = image_tag 'burger.jpg'
+    \&gt;
+
+= render(:partial => "cart")
+= render(:partial => "hour")
+= render(:partial => "orderOnline")
+= render(:partial => "aboutInfo")
+
+
+= javascript_include_tag 'index', 'data-turbolinks-track' => true

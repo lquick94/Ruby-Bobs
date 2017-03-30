@@ -1,0 +1,108 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title Bob's Menu
+    %link{:href => "//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Space+Mono", :rel => "stylesheet"}/
+  %body
+    #menuView
+      .container
+        #bg.row
+          .col-md-12
+            %span#cart.pull-right
+              %a{:href => "#"} View Order
+              |
+              %a{:href => "#"} Checkout
+        / begin menu
+        .row
+          .col-md-6
+            / left-hand column
+            .table-flexible
+              %table.table.borderless
+                %tbody
+                  - Menu.distinct(:category).pluck(:category).each do |category|
+                    %tr
+                      %td.text-center{:colspan => "3"}
+                        %span.secTitle= category
+                    - @item.each do |product|
+                      - if category == product.category
+                        %tr
+                          %td
+                            %span.dishName= product.name
+                            %br/
+                            %span.dishDesc= product.description
+                          %td.price.dollar= product.price
+                          %td.glyphicon.glyphicon-shopping-cart
+                            %a{:href => "#"} Add
+          .col-md-6
+            / right-hand column
+            .table-flexible
+              %table.table.borderless
+                %tbody
+                  %tr
+                    %td.text-center{:colspan => "3"}
+                      %span.secTitle Side Dishes
+                  %tr
+                    %td
+                      %span.dishName Poireaux aux câpres et moutarde vinaigrette
+                      %br/
+                      %span.dishDesc Poached leeks with capers and mustard vinaigrette
+                    %td.price.dollar 8
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add
+                  %tr
+                    %td
+                      %span.dishName Salad Niçoise avec hariot verts
+                      %br/
+                      %span.dishDesc Salad Niçoise with green beans
+                    %td.price.dollar 10
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add
+                  %tr
+                    %td
+                      %span.dishName Comté Rice
+                      %br/
+                      %span.dishDesc Creamy rice with cheese and herbs
+                    %td.price.dollar 7
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add
+                  %tr
+                    %td.text-center{:colspan => "3"}
+                      %span.secTitle Drinks
+                  %tr
+                    %td
+                      %span.dishName Citron Pressé
+                      %br/
+                      %span.dishDesc French lemonade
+                    %td.price.dollar 3
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add
+                  %tr
+                    %td
+                      %span.dishName Chocolat l'ancienne
+                      %span.dishDesc Melted dark chocolate served with whipped cream
+                    %td.price.dollar 10
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add
+                  %tr
+                    %td.text-center{:colspan => "3"}
+                      %span.secTitle Desserts
+                  %tr
+                    %td
+                      %span.dishName Clafoutis
+                      %br/
+                      %span.dishDesc Black cherries baked in batter and served with cream
+                    %td.price.dollar 15
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add
+                  %tr
+                    %td
+                      %span.dishName Poire belle Hélène
+                      %br/
+                      %span.dishDesc
+                        Pears poached in sugar syrup served with whipped cream &amp; chocolate syrup
+                    %td.price.dollar 12
+                    %td.glyphicon.glyphicon-shopping-cart
+                      %a{:href => "#"} Add

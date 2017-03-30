@@ -1,0 +1,44 @@
+!!!
+%html
+  %head
+    %title Bobs
+    %script{:src => "https://use.fontawesome.com/823c7bdc67.js"}
+= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+= javascript_include_tag 'application', 'data-turbolinks-track' => true
+= csrf_meta_tags
+
+%body
+  #logo
+    %h1
+      = image_tag 'logo.png'
+      Burgers • Pasta • Pizza
+  #menu
+    #nav
+      %ul.menu
+        %li
+          = link_to root_path do
+            %i.fa.fa-home
+            %span Home
+        %li
+          = link_to menu_path do
+            %i.fa.fa-cutlery
+            %span Menu
+        %li
+          = link_to contact_path do
+            %i.fa.fa-book
+            %span Contact
+        %li
+          = link_to locate_path do
+            %i.fa.fa-map
+            %span Locate
+        - if !user_signed_in?
+          %li
+            = link_to new_user_session_path do
+              %i.fa.fa-user
+              %span Sign In/Sign Up
+        - else
+          %li
+            %a{:href => "account"}
+              %i.fa.fa-user
+              %span Account
+= yield

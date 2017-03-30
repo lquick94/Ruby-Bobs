@@ -1,0 +1,11 @@
+.register
+  %h2 Register
+  .form
+    %form{:action => "", :method => "post"}
+      %input{:name => "first_name", :placeholder => "First Name", :type => "text"}/
+      %input{:name => "last_name", :placeholder => "Last Name", :type => "text"}/
+      %input{:name => "email", :placeholder => "E-mail Address", :type => "text"}/
+      %input{:name => "username", :placeholder => "Username", :type => "text"}/
+      %input{:name => "password", :placeholder => "Password", :type => "password"}/
+      %input{:name => "passwordAgain", :placeholder => "Repeat Password", :type => "password"}/
+      %input{:type => "submit", :value => "Register"}/
