@@ -6,6 +6,7 @@
   %body
     #menuView
       .container
+      
         %h1 Checkout
         %p SubTotal:
         %p Tax:
@@ -14,3 +15,7 @@
           %button.button Place Order
         %br/
         %br/
+= javascript_include_tag 'menu', 'data-turbolinks-track' => true
+
+:javascript
+                        $(document).ready(display);
