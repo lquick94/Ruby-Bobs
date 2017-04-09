@@ -14,7 +14,7 @@
             %span#cart.pull-right
               %a{:href => "#"} View Order
               |
-              %a{:href => "#"} Checkout
+              %a{:href => "shopping_cart"} Checkout
         / begin menu
         .row
           .col-md-6
@@ -106,3 +106,6 @@
                     %td.price.dollar 12
                     %td.glyphicon.glyphicon-shopping-cart
                       %a{:href => "#"} Add
+
+= javascript_include_tag 'https://code.jquery.com/jquery-3.1.0.min.js' => true
+= javascript_include_tag 'menu', 'data-turbolinks-track' => true
