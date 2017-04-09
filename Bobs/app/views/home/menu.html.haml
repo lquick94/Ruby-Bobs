@@ -35,7 +35,7 @@
                             %span.dishDesc= product.description
                           %td.price.dollar= product.price
                           %td.glyphicon.glyphicon-shopping-cart
-                            %a{:href => "#"} Add
+                            %button Add
           .col-md-6
             / right-hand column
             .table-flexible
@@ -51,7 +51,7 @@
                       %span.dishDesc Poached leeks with capers and mustard vinaigrette
                     %td.price.dollar 8
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
                   %tr
                     %td
                       %span.dishName Salad Niçoise avec hariot verts
@@ -59,7 +59,7 @@
                       %span.dishDesc Salad Niçoise with green beans
                     %td.price.dollar 10
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
                   %tr
                     %td
                       %span.dishName Comté Rice
@@ -67,7 +67,7 @@
                       %span.dishDesc Creamy rice with cheese and herbs
                     %td.price.dollar 7
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
                   %tr
                     %td.text-center{:colspan => "3"}
                       %span.secTitle Drinks
@@ -78,14 +78,14 @@
                       %span.dishDesc French lemonade
                     %td.price.dollar 3
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
                   %tr
                     %td
                       %span.dishName Chocolat l'ancienne
                       %span.dishDesc Melted dark chocolate served with whipped cream
                     %td.price.dollar 10
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
                   %tr
                     %td.text-center{:colspan => "3"}
                       %span.secTitle Desserts
@@ -96,7 +96,7 @@
                       %span.dishDesc Black cherries baked in batter and served with cream
                     %td.price.dollar 15
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
                   %tr
                     %td
                       %span.dishName Poire belle Hélène
@@ -105,7 +105,8 @@
                         Pears poached in sugar syrup served with whipped cream &amp; chocolate syrup
                     %td.price.dollar 12
                     %td.glyphicon.glyphicon-shopping-cart
-                      %a{:href => "#"} Add
+                      %button Add
+                      
 
-= javascript_include_tag 'https://code.jquery.com/jquery-3.1.0.min.js' => true
+= javascript_include_tag 'jquery', 'data-turbolinks-track' => true
 = javascript_include_tag 'menu', 'data-turbolinks-track' => true

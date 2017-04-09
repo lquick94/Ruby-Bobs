@@ -1,14 +1,16 @@
-
-var cart = [];
+/*global $*/
+var cart;
 function main() {
-  $('.glyphicon glyphicon-shopping-cart').on('click', function(){
-    cart.push($(this));
+    
+        cart = [];  
+        $('.glyphicon.glyphicon-shopping-cart').on('click', function(){
+        cart.push($(this));
    //$(this).next().slideToggle(400); 
   //$(this).toggleClass('active');
-  $(this).text('Added');});
+        $(this).text('Added');
+        alert(cart);
+    });
 
 }
-//alert(cart);
-
 
 $(document).ready(main);
