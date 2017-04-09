@@ -12,5 +12,7 @@ var checkout;
     }
 
     function display(){
-        alert(cart);
+        checkout = [];
+        checkout.push(cart);
+        alert(checkout);
     }
