@@ -21,4 +21,7 @@ class HomeController < ApplicationController
   def menu 
    @item = Menu.all
   end
+  
+  def shopping_cart
+  end
 end
