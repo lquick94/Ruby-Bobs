@@ -3,7 +3,6 @@
     .col-xs-8
       %h4= product.name
     .col-xs-4
-      %h1.cart-text= render 'layouts/cart_text'
       = form_for order_item, remote: true do |f|
         %h4.text-right
           Unit Price:
