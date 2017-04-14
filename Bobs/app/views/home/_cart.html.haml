@@ -1,4 +1,7 @@
 .cart
-  %h2
-    Cart
-    %i.fa.fa-shopping-cart{"aria-hidden" => "true"}
+  %a
+    = link_to menu_path do
+      %h2
+        %i.fa.fa-shopping-cart{"aria-hidden" => "true"}
+        %span Shopping Cart
+        = "(#{current_order.order_items.size})"

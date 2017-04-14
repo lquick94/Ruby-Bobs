@@ -25,12 +25,16 @@ ul {
 	margin-right: auto;
 }
 
-#menu {
-	float:left;
-  width:100%; height:auto;
-  margin:30px 0;
-  overflow:hidden;
+.input-group {
+  width: 20%;
 }
+
+#wid {
+-moz-column-width: 100px;
+-webkit-column-width: 100px;
+column-width: 100px;
+}
+
 
 #nav li a:hover {
     color: #A30214;
@@ -74,6 +78,7 @@ ul {
 } 
 #nav li:hover a:before, #nav a:hover:before {right:0; left:0;}
 #nav span {display:block;}
+
 
 
 body {
@@ -590,8 +595,22 @@ font-family: Oswald;
 	border-style: outset;
 	border-radius: 10px;
 	clear: left;
-  
 }
+
+.cart a {
+  list-style: none;
+  color: black;
+}
+
+.cart a:visited {
+  color: black;  
+}
+
+.cart a:hover {
+  color: red;
+  text-decoration:none;
+}
+
 .account h1 {
 	text-align: center;
 }
@@ -601,3 +620,4 @@ font-family: Oswald;
   color: white;
   font-size: 20px;
 }
+

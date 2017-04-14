@@ -1,5 +1,4 @@
-.row
-  .col-xs-6.col-xs-offset-3
-    %h1.cart-text= render 'layouts/cart_text'
-    - @products.each do |product|
-      = render "product_row", product: product, order_item: @order_item
+#menuView
+  %h1.cart-text= render 'layouts/cart_text'
+  - @products.each do |product|
+    = render "product_row", product: product, order_item: @order_item
