@@ -24,4 +24,7 @@ class HomeController < ApplicationController
   
   def shopping_cart
   end
+  
+  def place_order
+  end
 end

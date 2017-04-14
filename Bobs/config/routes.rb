@@ -12,4 +12,5 @@ Rails.application.routes.draw do
  get 'menu' => 'products#index'
  get 'account' => 'home#account'
  get 'shopping_cart' => 'home#shopping_cart'
+ get 'place_order' => 'home#place_order'
 end
