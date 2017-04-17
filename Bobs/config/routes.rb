@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   resources :products, only: [:index]
+  resources :contact_us, only: [:index] do
+      collection do
+        post :submit_form
+        get :thanks
+      end
+  end
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
   root to: "home#index"

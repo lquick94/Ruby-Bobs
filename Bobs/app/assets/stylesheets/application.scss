@@ -49,6 +49,12 @@ column-width: 100px;
 	padding-bottom: 35px;
 }
 
+.field_with_errors {
+  textarea, input {
+    border: 1px solid #EF4F4F;
+  }
+}
+
 #nav ul {
    margin:0; padding:0;
     list-style:none;
