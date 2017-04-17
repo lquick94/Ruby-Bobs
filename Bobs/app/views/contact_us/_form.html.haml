@@ -1,0 +1,14 @@
+.contact
+  %h2 Contact Us
+  = form_for @contact_form, url: submit_form_contact_us_path, html: { class: 'form' }  do |f|
+    %div
+      = f.label :name
+      = f.text_field :name
+    %div
+      = f.label :email
+      = f.email_field :email
+    %div
+      = f.label :message
+      = f.text_area :message
+    .actions
+      = f.submit "Submit"

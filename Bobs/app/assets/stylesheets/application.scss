@@ -93,7 +93,7 @@ column-width: 100px;
 
 
 body {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background.jpg');
+	background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('background.jpg');
 	background-size: cover;
 	background-attachment:fixed;
 	width: 100%;
@@ -120,34 +120,39 @@ body {
 	margin-top: 20px;
 }
 .aboutInfo{
-  font-family: Oswald;
 	font-size: 20px;
 	float: right;
 	display: inline;
-	width: 51%;
+	width: 53%;
 	min-height: 50px;
   clear: right;
-  text-align: center;
-	background-color: white;
-	border-style: outset;
-	border-radius: 10px;
 	margin-top: 20px;
 	margin-right: 9%;
+	
+  font-family: 'Open Sans Condensed', arial, sans;
+  padding: 30px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
 }
 
 .hours {
-	font-family: Oswald;
-	font-size: 20px;
 	float: left;
 	display: inline;
 	width: 25%;
 	min-height: 50px;
 	margin-left: 9%;
 	text-align: center;
-	background-color: white;
-	border-style: outset;
-	border-radius: 10px;
 	margin-top: 20px;
+  font-family: 'Open Sans Condensed', arial, sans;
+  padding: 30px;
+  background: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+
 }
 
 .login ul {
@@ -197,34 +202,12 @@ body {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-/*
-.register {
-	width: 50%;
-	font-family: Oswald;
-	font-size: 20px;
-  min-height: 50px;
-  margin-bottom: 10px;
-  text-align: center;
-  background-color: white;
-	border-style: outset;
-	border-radius: 10px;
-	margin-left: 25%;
-	margin-top: 200px;
-}
 
-.register h2 {
-	text-align: center;
-}
-
-.register ul{
-	text-decoration: none;
-}
-*/
 .contact, .register{
     font-family: 'Open Sans Condensed', arial, sans;
     width: 500px;
     padding: 30px;
-    background: #FFFFFF;
+    background: white;
     margin: 200px auto;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
@@ -241,6 +224,19 @@ body {
     padding: 20px;
     margin: -30px -30px 30px -30px;
 }
+
+.hours h2, .aboutInfo h2{
+    background: #4D4D4D;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 100;
+    padding: 20px;
+    margin: -30px -30px 30px -30px;
+}
+
 .register input[type="text"],
 .register input[type="date"],
 .register input[type="datetime"],
@@ -280,7 +276,7 @@ body {
     border: 1px solid #27A0A0;
     display: inline-block;
     cursor: pointer;
-    color: #FFFFFF;
+    color: white;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 14px;
     padding: 8px 18px;
@@ -299,7 +295,7 @@ body {
   margin: 0 auto 10px;
   padding: 20 10 20 10px;
   border-radius: 10px;
-  box-shadow: 0 0 100px 0 #FFFFFF, 0 5px 5px 0 rgba(0, 0, 0, 0);
+  box-shadow: 0 0 100px 0 white, 0 5px 5px 0 rgba(0, 0, 0, 0);
 }
 
 .contact input[type=text] {
@@ -335,7 +331,7 @@ input[type=text]:focus {
   width: 100%;
   border: 0;
   padding: 15px;
-  color: #FFFFFF;
+  color: white;
   font-size: 14px;
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
@@ -371,7 +367,7 @@ textarea {
   border-style: solid;
 	border-width: 1px;
 	border-color: #6D6D6E;
-  color: #FFFFFF;
+  color: white;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -466,24 +462,9 @@ textarea {
 * {box-sizing:border-box}
 .mySlides {display:none}
 
-/* Slideshow container */
-/*.slideshow-container {
- position: relative;
-width: 500px;
-height: 500px;
-overflow: hidden;
-z-index: 1;
-}
-.mySlides {
-max-width: 500px;
-max-height: 500px;
-position: absolute;
-
-}
-*/
 
 .slideshow-container{
-  width: 60%;
+  width: 62%;
   height: 500px;
   clear: right;
   overflow: hidden;
@@ -609,16 +590,16 @@ font-family: Oswald;
 	clear: left;
 }
 
-.cart a {
+.hours a {
   list-style: none;
   color: black;
 }
 
-.cart a:visited {
+.hours a:visited {
   color: black;  
 }
 
-.cart a:hover {
+.hours a:hover {
   color: red;
   text-decoration:none;
 }
